@@ -1,0 +1,87 @@
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.theapp{
+  width: 320px;
+  height: 500px;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+  /*display: flex;*/
+  /*display: flex;*/
+  /*flex: auto;*/
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  /*background-color: red;*/
+  background-image: url("bg.gif");
+  color: silver;
+  padding-right: 5%;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*flex: auto;*/
+  margin: 0px;
+}
+
+b{
+  -webkit-animation:bold 2s infinite alternate;
+}
+
+i{
+  -webkit-animation:italo 2s infinite alternate;
+}
+
+@-webkit-keyframes colorchange{
+  0% {color: orangered;}
+  50% {color: purple;}
+}
+
+@-webkit-keyframes bold{
+  0% {color: limegreen;}
+  50% {color: turqoise;}
+}
+
+@-webkit-keyframes italo{
+  0% {color: babyblue;}
+  50% {color: purple;}
+}
+
+h1{
+  -webkit-animation:colorchange 2s infinite alternate;
+  font-family: 'Modak', cursive;
+}
+
+.fetchedData{
+  background-color: gold;
+}
+
+textarea#styled {
+  background-color: black;
+  color: cyan;
+  font-family: 'Roboto Mono', monospace;
+  width: 80%;
+}
+
+.ideabubble{
+  user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-o-user-select: none;
+}
+
+.myButton{
+  /*background-color: pink;*/
+  /*align-items: center;*/
+  width: 100%;
+}

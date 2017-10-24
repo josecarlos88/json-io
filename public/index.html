@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>json.io</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Modak|Roboto+Mono" rel="stylesheet">
+  </head>
+  <body>
+<div class="theapp">
+
+
+<h1>elastic library</h1>
+<!-- <h3>u may share or recieve an idea below</h3> -->
+
+<!-- div tag for pushing data into -->
+<div class="fetch myButton"><b>give me an idea</b></div>
+
+<!-- <div class="fetchedData">
+... ... ...
+</div> -->
+<div class="ideabubble">
+
+ <textarea class="enterText" name="styled-textarea" id="styled" rows="8" cols="80">
+  </textarea></div> 
+
+<textarea class="printIdea" name="printIdea" id="styled" rows="8" cols="80">
+</textarea>
+
+  <div class="submit myButton">
+    <i>save idea to elastic library</i>
+  </div>
+
+<!-- <pre>
+<h1>notes</h1>
+<b>json.io</b>
+
+1) adding in other packages from <b>npm</b>
+2) <b>get</b> and <b>post</b> are ways of <i>sending data across the network</i>, this is a direct peer-to-peer connection. You're not really communicating with the server, but like bittorrent and Skyper, you're communicating directly with the other node / user.
+3) <b>get</b> is a request for some data. it's <i>insecure</i>, so don't use anything with sensitive data, it logs in your browser history and it's trackable. Its you on your device asking a server for information. Linking a file, font or image is a form of <i>get</i>
+4) <b>post</b> is where things get a little crazier. We're not sending any data with <b>get</b> other than the name of what we want. <b>Post</b> sends some data to the server, the server does some computation, then sends back a response related to the post. Any service you use online is a <b>post request</b>, with a server logging your <b>username + password</b> and accepting or denying it.
+5) Web sockets are setting up a generic channel between the server and you, it could be used for many things. <b>socket.io</b> balloons it out to deal with everybody who's using the server, which is anybody whose browser is at that site.
+
+we installed <i>node package manager</i>
+
+Drag folder into <b>terminal</b> to easily <i>change directory 'cd'</i>
+1) npm init
+2) npm install --save (name of the package you want)
+3) npm install --save <i>jsonfile</i> or <i>express</i>
+
+<h6>how to require in the server.js</h6>
+var express = require('express'); // requires express
+
+<h6>Booting up the server:</h6>
+in the right directory
+in <b>TERMINAL</b>: <i>node server.js</i>
+this runs the server, initializing its little whip
+
+<b>EADDRINUSE</b> = you are using the port somewhere else
+control + c = quit the server
+
+
+
+we need a <b>json</b> package, so we head over to <b>npm</b> online, and the one Ben picked is <i>json file</i>
+</pre> -->
+ <!-- end of the body contents -->
+</div>
+
+ <!-- Run the Front End script, grab the jQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="frontend.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ui 2</title>
+  </head>
+  <link rel="stylesheet" href="ui2.css">
+  <link href="bitwise.ttf" rel="stylesheet">
+  <link href="consolefont.ttf" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+  <script>
+$(document).ready(function(){
+
+
+    $("#recordbox").click(function(){ // click record -> record page
+        $("#menuPage").slideUp();
+        $("#recordPage").slideDown();
+        $(".printIdea").val('');
+    });
+
+    $(".submit").click(function(){ // click submit to save to JSON and return to menu
+        $("#recordPage").slideUp();
+        $("#menuPage").slideDown();
+    });
+
+    $("#recievebox").click(function(){ // Recieve brings you to populated page with idea from JSON data
+        $("#menuPage").slideUp();
+        $("#recievePage").slideDown();
+    });
+
+    $("#recievePage").click(function(){ // click anywhere on recieve page to return to main menu
+        $("#recievePage").slideUp();
+        $("#menuPage").slideDown();
+    });
+
+    $("#show").click(function(){
+        $("p").show();
+    });
+
+
+
+});
+</script>
+  <body>
+    <div class="content">
+
+
+<!-- <div class="fetch myButton"></div> -->
+<div class="content">
+
+<!-- Div tag to contain the Main Menu -->
+<div id="menuPage">
+
+<!-- The Record Idea Button -->
+<div id="recordbox">
+  <p>record an idea</p>
+</div>
+
+
+<pre>
+<!-- Spacer for the two main menu buttons -->
+
+</pre>
+
+<!-- The Button to take you to recieve an idea -->
+<div id="recievebox" class="fetch">
+  <p>recieve an idea</p>
+</div>
+</div>
+
+
+<!-- Div for the Record Page, with the user text input -->
+<div id="recordPage">
+  <textarea class="printIdea" name="printIdea" placeholder="type into this cybernetic mesh to expand its unity field with your creativity" id="styled" rows="8" cols="80">
+  </textarea>
+  <div class="submit">
+  <p>SEND</p>
+  </div>
+</div>
+
+
+<!-- Div for the Recieve Page, where an idea is printed for you -->
+<div id="recievePage">
+  <textarea class="enterText" name="styled-textarea" id="styled" rows="8" cols="80">
+   </textarea></div>
+</div>
+    </div>
+    <!-- close content section -->
+
+  </div>
+
+<!-- Load the front end script, for communicating with the back end, GET and POST the info -->
+<script src="frontend.js"> </script>
+
+  </body>
+</html>

@@ -1,0 +1,129 @@
+
+
+/*Container to control the overall size of the app*/
+.content{
+  max-width: 85%;
+  height: 100%;
+  /*margin: auto;*/
+  align-items: center;
+}
+
+#menuPage{
+  width:100%;
+}
+
+/*The Buttons*/
+#recordbox {
+    border-radius: 25px;
+    background: #FF693F;
+    padding: 20px;
+    width: 100%;
+    height: 150px;
+    font-family: myTitleFont;
+}
+#recievebox {
+    border-radius: 25px;
+    background: #71F79F;
+    padding: 20px;
+    width: 100%;
+    height: 150px;
+    font-family: myTitleFont;
+}
+
+/*The Record and Recieve Pages*/
+#recordPage {
+  display: none;
+  border-radius: 25px;
+  background: #000000;
+  padding: 20px;
+  width: 90%;
+  height: 90%;
+}
+#recievePage {
+  display: none;
+  border-radius: 25px;
+  background: black;
+  padding: 20px;
+  width: 100%;
+  height: 400px;
+}
+
+/*The text area that displays the randomly accessed idea*/
+.enterText{
+  background-color: black;
+  -webkit-animation:consoleGlow2 2s infinite alternate;
+  font-family: myFirstFont;
+  color: #15ff00;
+  width: 100%;
+  font-size: 5vh;
+  height: 100%;
+  border: none;
+  resize: none;
+  overflow: auto;
+  outline: none;
+}
+
+/*The text area where users type in their idea*/
+.printIdea{
+  background-color: black;
+  -webkit-animation:consoleGlow2 2s infinite alternate;
+  font-family: myFirstFont;
+  color: #15ff00;
+  width: 100%;
+  font-size: 5vh;
+  height: 90%;
+  border: none;
+  resize: none;
+  overflow: auto;
+  outline: none;
+}
+
+/*The Submit Button for recording an idea into the database*/
+.submit{
+  width: 100px;
+  height: 50px;
+  background-color: #e4ff59;
+  padding: 20px;
+  border-radius: 25px;
+  margin: auto;
+  font-family: myFirstFont;
+}
+
+/*Importing the special vintage computer font*/
+@font-face {
+  font-family: myFirstFont;
+  src: url(bitwise.ttf);
+}
+@font-face {
+  font-family: myTitleFont;
+  src: url(consolefont.ttf);
+}
+
+
+/*Setting the custom font to be used */
+p{
+  /*font-family: myFirstFont;*/
+  font-size: 5vh;
+  text-align: center;
+  /*position: absolute;*/
+  position: relative;
+  top:-20px;
+  /*width: 100%;*/
+  -webkit-animation:consoleGlow 2s infinite alternate;
+  color: #15ff00;
+}
+
+body{
+  background-color: #513C2C;
+  margin: none;
+}
+
+/*Generating the animations for the glowing text*/
+@-webkit-keyframes consoleGlow{
+  0% {color: limegreen;}
+  50% {color: teal;}
+}
+@-webkit-keyframes consoleGlow2{
+  0% {color: #ddff54;}
+  50% {color: #00ff00;}
+}
